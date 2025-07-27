@@ -7,8 +7,8 @@ export default defineConfig({
     plugins: [tailwindcss()],
     preview: {
       host: '0.0.0.0',
-      port: 4321, // o el que uses
-      allowedHosts: ['redkit.co'] // o ['*'] para pruebas
+      port: 4321,
+      allowedHosts: ['redkit.co', 'localhost', '127.0.0.1']
     }
   }
 });
