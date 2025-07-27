@@ -1,5 +1,13 @@
 [phases.setup]
-nixPkgs = ["nodejs_18"]
+nixPkgs = ["nodejs_20"]
+
+[phases.install]
+cmds = ["npm ci"]
+
+[phases.build]
+cmds = ["npm run build"]
 
 [variables]
-NODE_VERSION = "18.20.8"
+NODE_VERSION = "20.0.0"
+NIXPACKS_NODE_VERSION = "20.0.0"
+NIXPACKS_NODE_MAJOR = "20"
