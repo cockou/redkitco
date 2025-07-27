@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
 ---
 
 <!doctype html>
@@ -12,6 +13,7 @@ import '../styles/global.css';
 		<title>RedKitCo - Crafting the Future</title>
 	</head>
 	<body class="m-0 w-full h-full bg-black text-white font-sans">
+		<Navbar />
 		<slot />
 	</body>
 </html>
