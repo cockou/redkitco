@@ -17,4 +17,5 @@ RUN npm run build
 EXPOSE 4321
 
 # Comando para servir el sitio
-CMD ["npx", "astro", "preview", "--host", "0.0.0.0"]
+CMD ["npx", "astro", "preview", "--host", "0.0.0.0", "--port", "4321"]
+
